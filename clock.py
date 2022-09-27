@@ -5,7 +5,7 @@ sched = BlockingScheduler()
 
 
 @sched.scheduled_job('interval', minutes=1)
-def scheduled_job():
+def timed_job():
     print('This job is run every weekday at 11 AM.')
     send_email()
 
