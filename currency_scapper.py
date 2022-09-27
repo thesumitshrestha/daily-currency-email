@@ -19,7 +19,7 @@ def review_count_scrape():
     url = "https://www.laxmibank.com/rates/forex/"
     headers = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0 Win64 x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'})
     r = requests.get(url, headers=headers)
-    soup = BeautifulSoup(r.text, 'lxml')
+    soup = BeautifulSoup(r.text, features='lxml')
     print(r.status_code)
 
     gdp_table = soup.find("table", attrs={
