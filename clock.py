@@ -10,9 +10,9 @@ sched = BlockingScheduler()
 #     send_email()
 
 
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=23)
+@sched.scheduled_job('cron', day_of_week='mon-fri', hour=6)
 def scheduled_job():
-    print('This job is run every weekday at 11 PM.')
+    print('This job is run every weekday at 6 AM.')
     send_email()
 
 
