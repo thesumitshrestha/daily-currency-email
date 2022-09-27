@@ -104,11 +104,11 @@ def send_email_at(send_time):
     send_email()
 
 
-first_email_time = dt.datetime(2022, 9, 26, 20, 25, 0)
-interval = dt.timedelta(minutes=2*60)
+# first_email_time = dt.datetime(2022, 9, 26, 20, 25, 0)
+# interval = dt.timedelta(minutes=2*60)
 
-send_time = first_email_time
+# send_time = first_email_time
 
-while True:
-    send_email_at(send_time)
-    send_time = send_time + interval
+# while True:
+#     send_email_at(send_time)
+#     send_time = send_time + interval
